@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Tilt+Warp&display=swap');
+html body{
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    box-sizing: border-box; /*conta nelle dimensioni sia bordo che padding*/
+    /* border: 3px solid gold; <- crea bordo per tutti gli elementi*/
+    border: none !important;
+}
+body{
+    background: rgb(110,71,150);
+    background: linear-gradient(180deg, rgba(110,71,150,1) 0%, rgba(147,108,91,1) 100%);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: scroll;
+    font-family: 'Oswald', sans-serif;
+    font-size: large;
+}
+.flex-container{
+    border: 6px solid red; /*crea bordo*/
+    height: 100vh;/*view height*/
+    width: 100vw; /*view width*/
+    display: flex; /*dispone tutto in riga, annullando lo stile di prima*/
+    flex-direction: column; /*dispone la flex in colonne, "ripristinando" lo stile di prima*/
+}
+header{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    height: 75px;
+    border: 6px solid green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.png{
+    border: 6px solid blue;
+    width: 75px;
+}
+main{
+    border: 6px solid red;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+footer{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 150px;
+    height: 100px;
+    border: 6px solid green;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.social{
+    border: 6px solid black;
+    flex-grow: 1;
+    align-items: center;
+}
+.jpg{
+    border: 6px solid teal;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background-image: url(./assets/Mocha.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.text{
+    border: 6px solid firebrick;
+    font-family: 'Tilt Warp', cursive;
+    color: black;
+    /* font-size: large; */
+    -webkit-text-stroke: 0.75px white;
+    -webkit-text-fill-color: black;
+    flex-grow: 5;
+}
