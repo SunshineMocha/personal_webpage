@@ -77,3 +77,7 @@ footer{
     -webkit-text-fill-color: black;
     flex-grow: 5;
 }
+.row
+{
+    display: flex;
+}
